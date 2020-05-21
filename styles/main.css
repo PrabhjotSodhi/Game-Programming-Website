@@ -1,0 +1,12 @@
+* {
+    font-family: 'Segoe UI';
+}
+
+#navbar {
+    position: none;
+}
+
+.wrapper {
+    width: 960px;
+    margin: auto;
+}
