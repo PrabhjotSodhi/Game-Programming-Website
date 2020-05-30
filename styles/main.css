@@ -2,11 +2,62 @@
     font-family: 'Segoe UI';
 }
 
-#navbar {
-    position: none;
-}
-
 .wrapper {
     width: 960px;
     margin: auto;
+}
+
+.logo {
+    width: 42px;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.herotainer {
+    position: relative;
+    color: white;
+    text-align: left;
+}
+
+.herobox {
+    position: absolute;
+    top: 35%;
+    left: 2%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.tcenter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.learnbutton {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
