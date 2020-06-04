@@ -66,36 +66,27 @@ a {
     width: 50%;
     height: 50%;
 }
+.flex-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .flex-edu {
     margin-right: 50px;
     margin-left: 50px;
     align-items: center;
 }
 
-/*--Class for centering text--*/
-.tcenter {
+/*--Text Classes--*/
+.tcenter {                          /*--Class for centering text--*/
     text-align: center;
 }
-.tlink {
+.tlink {                            /*--Class for NoWrap text--*/
     white-space: nowrap;
 }
 
-.learnbutton {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}           
-.footerbutton {
-    background-color: Transparent;
-    color: lightgray;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-}
-/*--General Button Class--*/
-.bbutton {
+/*--Button Classes--*/
+.bbutton {                          /*--General Button Class--*/
     background-color: #184DDF;
     font-size: 16px;
     font-weight: bold;
@@ -104,6 +95,20 @@ a {
     background-repeat:no-repeat;
     border: none;
     border-radius: 6px;
+    overflow: hidden;
+    outline:none;
+}
+.learnbutton {                       /*--Learn Button Classs--*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}           
+.footerbutton {                      /*--FooterButton Class--*/
+    background-color: Transparent;
+    color: lightgray;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
     overflow: hidden;
     outline:none;
 }
