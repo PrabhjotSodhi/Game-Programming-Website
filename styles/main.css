@@ -8,18 +8,16 @@
     margin: auto;
 }
 
-/*--Logo Size Adjustments--*/
-.logo {
+/*-- NavBar Classes --*/
+.logo {                             /*--Logo Size Adjustments--*/
     width: 42px;
 }
-/*--Navbar Text Position--*/
-nav {
+nav {                               /*--Navbar Text Position--*/
     margin: 0;
     padding: 0;
     float: right;
 }
-/*--Sets Hyperlink text Adjustments--*/
-a {
+a {                                 /*--Sets Hyperlink text Adjustments--*/
     display: inline-block;
     color: black;
     text-align: center;
@@ -67,9 +65,10 @@ a {
     height: 50%;
 }
 .flex-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 442px;
+    justify-content: space-evenly;
 }
 .flex-edu {
     margin-right: 50px;
@@ -111,4 +110,18 @@ a {
     cursor:pointer;
     overflow: hidden;
     outline:none;
+}
+
+/*--One Use Classes--*/
+.card {
+    flex: 1 0 30%; 
+    margin: 2%; 
+    padding: 0.5em 0;
+    background-color: #F5F5F5;
+}
+
+.card a {
+	color: #333333;
+    text-decoration: none;
+    font-size: 18px;
 }
