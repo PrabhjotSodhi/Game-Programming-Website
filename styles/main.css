@@ -125,3 +125,17 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
     text-decoration: none;
     font-size: 18px;
 }
+.social {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    width: 115px;
+    height: 115px;
+}
+.social img {
+    width: 100%;
+    height: auto;
+}
