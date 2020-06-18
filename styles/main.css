@@ -98,10 +98,18 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
 }
 .shr {
     border: 1.5px solid #DBDBDB;
+    width: 15%;
+    border-radius: 5px;
+    margin-left: 0;
+    margin-top: -15px;
+    margin-bottom: -5px;
+}
+.chr {
+    border: 1.5px solid #DBDBDB;
     width: 40%;
     border-radius: 5px;
 }
-.whr {
+.vhr {
     border: 1.5px solid #FFFFFF;
     width: 40%;
     border-radius: 5px;
@@ -169,6 +177,7 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
     margin: 2%; 
     padding: 0.5em 0;
     background-color: #F5F5F5;
+    border-radius: 15px;
 }
 .card h2 {
 	color: #333333;
@@ -181,6 +190,10 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
+}
+.video {
+    align-items: center;
+    padding-top: 25px;
 }
 .social {
     background-color: Transparent;
