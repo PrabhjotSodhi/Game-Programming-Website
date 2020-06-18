@@ -1,5 +1,6 @@
 * {
     font-family: 'Segoe UI';
+    scroll-behavior: smooth;
 }
 
 /*--Sets the width of the website--*/
@@ -108,11 +109,15 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
     border: 1.5px solid #DBDBDB;
     width: 40%;
     border-radius: 5px;
+    margin-top: -15px;
+    margin-bottom: -5px;
 }
 .vhr {
     border: 1.5px solid #FFFFFF;
     width: 40%;
     border-radius: 5px;
+    margin-top: -15px;
+    margin-bottom: -5px;
 }
 .fhr {
     border: 1px solid #707070;
@@ -138,6 +143,15 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
     justify-content: center;
     align-items: center;
 }           
+.hbbutton {                      /*--FooterButton Class--*/
+    background-color: Transparent;
+    color: #BDBDBD;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
 .footerbutton {                      /*--FooterButton Class--*/
     background-color: Transparent;
     color: #BDBDBD;
@@ -146,6 +160,16 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
     cursor:pointer;
     overflow: hidden;
     outline:none;
+}
+.footerbutton a {                      /*--FooterButton Class--*/
+    background-color: Transparent;
+    color: #BDBDBD;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    margin-top: -18px;
 }
 .ftext {
     color: #F2F2F2;
