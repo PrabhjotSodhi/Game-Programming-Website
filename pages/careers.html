@@ -8,19 +8,22 @@
 
     <!-- scripts/css -->
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <script src="../lib/main.js"></script>
 
 </head>
 <body>
 <div class="wrapper">                                                               <!-- css class for setting width of content based on the screen-->
     <!-- navbar setup -->
     <header>
-        <img src="/images/WebsiteLogo.png" class="logo">
-        <nav>
-            <a href="../index.html">HOME</a>
-            <a href="./education.html">EDUCATION</a>
-            <a href="./careers.html">CAREER</a>
-            <a href="./about.html">ABOUT</a>
-        </nav>
+        <a href="../index.html">
+            <img src="../images/WebsiteLogo.png" class="logo" alt="">
+        </a>
+        <ul>
+            <li><a href="../index.html" class="navpage">HOME</a></li>
+            <li><a href="./education.html" class="navpage">EDUCATION</a></li>
+            <li><a href="./careers.html" class="navpage">CAREER</a></li>
+            <li><a href="./about.html" class="navpage">ABOUT</a></li>
+        </ul>
     </header>
 
     <!-- Title -->
@@ -28,7 +31,7 @@
     <hr class="thr">
 
     <!-- Card Stages -->
-    <div style="padding-top: 50px; padding-bottom: 25px;">
+    <div style="margin-top: -25px; padding-bottom: 25px;">
         <h1 class="tcenter title" style="font-size: 40px; padding-bottom: 20px;">STAGES</h1>
         <hr class="chr">
     </div>
@@ -88,39 +91,39 @@
     </div>
 
     <!-- Yotube Video -->
-    <div class="flex-column" style="padding-bottom: 100px; align-items: center; background-image: url(../images/VideoBackground.png);">
-        <h1 class="title" style="align-items: center; color: white; font-size: 40px; padding-bottom: 25px;">What's it Like?</h1>
+    <div class="flex-column" style="padding-bottom: 50px; align-items: center; background-image: url(../images/VideoBackground.png);">
+        <h1 class="title" style="align-items: center; color: white; font-size: 40px; padding-bottom: 25px; margin-top: -50px;">What's it Like?</h1>
         <hr class="vhr">
-        <iframe width="719px" height="403px" class="video" src="https://www.youtube.com/embed/PNpxtl8KReg"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="719" height="403" class="video" src="https://www.youtube.com/embed/PNpxtl8KReg"
+        style="border: 0px;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   
     <!-- Game Companies -->
-    <div class="flex-column flex-wrap" style="padding-bottom: 100px; padding-top: 100px; align-items: center;">
+    <div class="flex-column flex-wrap" style="padding-bottom: 100px; align-items: center;">
         <h1 class="tcenter title" style="font-size: 40px; padding-bottom: 30px;">Game Compaines</h1>
         <hr class="chr">
         <div class="flex-row" style="padding-top: 50px; padding-bottom: 50px;">
             <div class="flex-column flex-edu">
-                <img src="../images/A44Games.png" alt="" style="width: 150px; height: 150px; align-items: center;">
-                <h3 class="tlink tcenter">A44</h3>
+                <a href="https://www.a44games.com/" target="_blank"><img src="../images/A44Games.png" alt="" style="width: 150px; height: 150px; align-items: center;"></a>
+                <a href="https://www.a44games.com/" target="_blank"><h3 class="tlink tcenter">A44</h3></a>
             </div>
             <div class="flex-column flex-edu">
-                 <img src="../images/NinjaKiwi.png" alt="" style="width: 192px; height: 128px; align-items: center;">
-                 <h3 class="tlink tcenter">Ninja Kiwi</h3>
+                <a href="https://ninjakiwi.com/" target="_blank"><img src="../images/NinjaKiwi.png" alt="" style="width: 192px; height: 128px; align-items: center;"></a>
+                <a href="https://ninjakiwi.com/" target="_blank"><h3 class="tlink tcenter">Ninja Kiwi</h3></a>
             </div>
              <div class="flex-column flex-edu">
-                <img src="../images/PikPok.png" alt="" style="width: 246px; height: 164px; align-items: center;">
-                <h3 class="tlink tcenter">PIKPOK</h3>
+                <a href="https://pikpok.com/" target="_blank"><img src="../images/PikPok.png" alt="" style="width: 246px; height: 164px; align-items: center;"></a>
+                <a href="https://pikpok.com/" target="_blank"><h3 class="tlink tcenter">PIKPOK</h3></a>
             </div>
         </div>
         <div class="flex-row">
             <div class="flex-column flex-edu">
-                <img src="../images/SyntyStudios.png" alt="" style="width: 192px; height: 128px; align-items: center;">
-                <h3 class="tlink tcenter">Syntystore</h3>
+                <a href="https://www.syntystudios.com/" target="_blank"><img src="../images/SyntyStudios.png" alt="" style="width: 192px; height: 128px; align-items: center;"></a>
+                <a href="https://www.syntystudios.com/" target="_blank"><h3 class="tlink tcenter">Syntystore</h3></a>
             </div>
             <div class="flex-column flex-edu">
-                <img src="../images/GearGames.png" alt="" style="width: 192px; height: 128px; align-items: center;">
-                <h3 class="tlink tcenter">Grinding Gear Games</h3>
+                <a href="https://www.grindinggear.com/" target="_blank"><img src="../images/GearGames.png" alt="" style="width: 192px; height: 128px; align-items: center;"></a>
+                <a href="https://www.grindinggear.com/" target="_blank"><h3 class="tlink tcenter">Grinding Gear Games</h3></a>
             </div>
         </div>
     </div>
@@ -129,7 +132,7 @@
     <div class="flex-column fback">
         <div class="flex-row">
             <div class="flex-column">
-                <img src="/images/WebsiteLogo.png" class="logo fpad">
+                <img src="../images/WebsiteLogo.png" class="logo fpad" alt="">
                 <p class="fpadt ftext" style="width:300px;">
                     This is a website that was made for a
                     DITM as part of our assessment for
@@ -138,21 +141,21 @@
             </div>
             <div class="flex-column tcenter fcolumn">
                 <p style="margin-bottom: 20px;">NAVIGATION</p>
-                <button class="footerbutton"><a href="../index.html">Home</a></button>
-                <button class="footerbutton"><a href="./education.html">Education</a></button>
-                <button class="footerbutton"><a href="./about.html">Career</a></button>
+                <a href="../index.html" class="footerbutton">Home</a>
+                <a href="./education.html" class="footerbutton">Education</a>
+                <a href="./about.html" class="footerbutton">Career</a>
             </div>
             <div class="flex-column tcenter fcolumn">
                 <p style="margin-bottom: 20px;">FOLLOW ME</p>
-                <button class="footerbutton"><a href="">Instagram</a></button>
-                <button class="footerbutton"><a href="">Reddit</a></button>
-                <button class="footerbutton"><a href="">Youtube</a></button>
+                <a href="https://www.instagram.com/prabhjotsodhi/" class="footerbutton">Instagram</a>
+                <a href="https://www.reddit.com/user/TacticCoconut" class="footerbutton">Reddit</a>
+                <a href="https://www.youtube.com/channel/UCZAr03A0Ybq6NTX9NuLmweQ" class="footerbutton">Youtube</a>
             </div>
             <div class="flex-column fcolumn">
-                <p style="margin-bottom: 1px;">CONTACT</p>
-                <p class="ftext" style="margin-bottom: -15px; font-weight: bold; color: #F2F2F2;">Prabhjot Sodhi</p>
-                <p class="ftext" style="margin-bottom: -5px; color: #F2F2F2;">st20135@ormiston.school.nz</p>
-                <p class="ftext" style="margin-bottom: -15px; font-weight: bold; color: #F2F2F2;">Career Advisor</p>
+                <p style="margin-bottom: 10px;">CONTACT</p>
+                <p class="ftext" style="margin-bottom: 0px; font-weight: bold; color: #F2F2F2;">Prabhjot Sodhi</p>
+                <p class="ftext" style="margin-bottom: 10px; color: #F2F2F2;">st20135@ormiston.school.nz</p>
+                <p class="ftext" style="margin-bottom: 0px; font-weight: bold; color: #F2F2F2;">Career Advisor</p>
                 <p class="ftext" style="color: #F2F2F2;">randerson@ormiston.school.nz</p>
             </div>
         </div>

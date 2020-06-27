@@ -8,35 +8,38 @@
 
     <!-- scripts/css -->
     <link href="./styles/main.css" rel="stylesheet" type="text/css">
+    <script src="./lib/main.js"></script>
 
 </head>
 <body>
 <div class="wrapper">                                                               <!-- css class for setting width of content based on the screen-->
     <!-- navbar setup -->
     <header>
-        <img src="./images/WebsiteLogo.png" class="logo">
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="./pages/education.html">EDUCATION</a>
-            <a href="./pages/careers.html">CAREER</a>
-            <a href="./pages/about.html">ABOUT</a>      
-        </nav>
+        <a href="./index.html">
+            <img src="./images/WebsiteLogo.png" class="logo" alt="">
+        </a>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./pages/education.html">EDUCATION</a></li>
+            <li><a href="./pages/careers.html">CAREER</a></li>
+            <li><a href="./pages/about.html">ABOUT</a></li>
+        </ul>
     </header>
     
     <!-- hero image -->
     <div class="herotainer">
         <img src="./images/HeroImage.jpg" alt="Hero Image" style="width:100%;">
         <div class="herobox">
-            <h3 class="herotext">YOUR GUIDE ON
+            <h3 class="herotext" style="margin-bottom: 20px;">YOUR GUIDE ON
             <br>GAME PROGRAMMING
             </h3>
-            <button class="hbbutton"><a class="bbutton" href="#middle">Get Started</a></button>
+            <a class="bbutton" href="#middle">Get Started</a>
         </div>
     </div>
 
     <!-- section 1 -->
     <div class="flex" id="middle" style="padding-bottom: 100px;">
-        <img src="./images/hSection1Image.png" class="flex-section"> 
+        <img src="./images/hSection1Image.png" class="flex-section" alt=""> 
         <div class="flex-column flex-section" style="padding-left: 50px;">
             <h1>About</h1>
             <hr class="shr">
@@ -65,16 +68,16 @@
             Designer, Game Designer, Game Tester, Concept Artist
             all come under the category of game developer.</p>
         </div>
-        <img src="./images/hSection2Image.png" class="flex-section">
+        <img src="./images/hSection2Image.png" class="flex-section" alt="">
     </div>
     
     <!-- section 3 -->
     <div class="flex-column tcenter">
         <h1 class="tcenter">Learn More</h1>
-        <div class="learnbutton" style="padding-top: 15px; padding-bottom: 100px;">
-            <button class="hbbutton" style="margin-right: 50px;"><a class="bbutton" href="./pages/education.html">Education</a></button>
-            <button class="hbbutton" style="margin-right: 50px; margin-left: 50px;"><a class="bbutton" href="./pages/careers.html">Career</a></button>
-            <button class="hbbutton" style="margin-left: 50px;"><a class="bbutton" href="./pages/about.html">Contact</a></button>
+        <div class="learnbutton" style="padding-top: 35px; padding-bottom: 50px;">
+            <a class="bbutton" style="margin-right: 50px;" href="./pages/education.html">Education</a>
+            <a class="bbutton" style="margin-right: 50px; margin-left: 50px;" href="./pages/careers.html">Career</a>
+            <a class="bbutton" style="margin-left: 50px;" href="./pages/about.html">Contact</a>
         </div>
     </div>
 
@@ -82,7 +85,7 @@
     <div class="flex-column fback">
         <div class="flex-row">
             <div class="flex-column">
-                <img src="/images/WebsiteLogo.png" class="logo fpad">
+                <img src="./images/WebsiteLogo.png" class="logo fpad" alt="">
                 <p class="fpadt ftext" style="width:300px;">
                     This is a website that was made for a
                     DITM as part of our assessment for
@@ -91,21 +94,21 @@
             </div>
             <div class="flex-column tcenter fcolumn">
                 <p style="margin-bottom: 20px;">NAVIGATION</p>
-                <button class="footerbutton"><a href="./index.html">Home</a></button>
-                <button class="footerbutton"><a href="./pages/education.html">Education</a></button>
-                <button class="footerbutton"><a href="./pages/about.html">Career</a></button>
+                <a href="./index.html" class="footerbutton">Home</a>
+                <a href="./pages/education.html" class="footerbutton">Education</a>
+                <a href="./pages/about.html" class="footerbutton">Career</a>
             </div>
             <div class="flex-column tcenter fcolumn">
                 <p style="margin-bottom: 20px;">FOLLOW ME</p>
-                <button class="footerbutton"><a href="./index.html">Instagram</a></button>
-                <button class="footerbutton"><a href="./pages/education.html">Reddit</a></button>
-                <button class="footerbutton"><a href="./pages/about.html">Youtube</a></button>
+                <a href="https://www.instagram.com/prabhjotsodhi/" class="footerbutton">Instagram</a>
+                <a href="https://www.reddit.com/user/TacticCoconut" class="footerbutton">Reddit</a>
+                <a href="https://www.youtube.com/channel/UCZAr03A0Ybq6NTX9NuLmweQ" class="footerbutton">Youtube</a>
             </div>
             <div class="flex-column fcolumn">
-                <p style="margin-bottom: 1px;">CONTACT</p>
-                <p class="ftext" style="margin-bottom: -15px; font-weight: bold; color: #F2F2F2;">Prabhjot Sodhi</p>
-                <p class="ftext" style="margin-bottom: -5px; color: #F2F2F2;">st20135@ormiston.school.nz</p>
-                <p class="ftext" style="margin-bottom: -15px; font-weight: bold; color: #F2F2F2;">Career Advisor</p>
+                <p style="margin-bottom: 10px;">CONTACT</p>
+                <p class="ftext" style="margin-bottom: 0px; font-weight: bold; color: #F2F2F2;">Prabhjot Sodhi</p>
+                <p class="ftext" style="margin-bottom: 10px; color: #F2F2F2;">st20135@ormiston.school.nz</p>
+                <p class="ftext" style="margin-bottom: 0px; font-weight: bold; color: #F2F2F2;">Career Advisor</p>
                 <p class="ftext" style="color: #F2F2F2;">randerson@ormiston.school.nz</p>
             </div>
         </div>

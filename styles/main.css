@@ -1,6 +1,8 @@
 * {
     font-family: 'Segoe UI';
     scroll-behavior: smooth;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /*--Sets the width of the website--*/
@@ -10,13 +12,35 @@
 }
 
 /*-- NavBar Classes --*/
-.logo {                             /*--Logo Size Adjustments--*/
-    width: 42px;
+header {
+    position: fixed;
+    z-index: 1;
+    padding: 5px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .6s;
+    
 }
-nav {                               /*--Navbar Text Position--*/
-    margin: 0;
-    padding: 0;
-    float: right;
+.logo {                             /*--Logo Size Adjustments--*/
+    position: relative;
+    width: 42px;
+    transition: .6s;
+}
+header ul {                               /*--Navbar Text Position--*/
+    position: relative;
+    padding-left: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
 }
 a {                                 /*--Sets Hyperlink text Adjustments--*/
     display: inline-block;
@@ -25,7 +49,14 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
     padding: 14px 16px;
     text-decoration: none;
 }
-
+.Sticky {
+    background-color: white;
+    padding: 0px 76px;
+    font-size: 75%;
+}
+.Sticky .logo {
+    width: 33px;
+}
 /*--Sets the Information In the Hero Image--*/
 .herotainer {
     position: relative;
@@ -35,7 +66,7 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
 }
 .herobox {                              /*--Hero Image Adjustments--*/
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 2%;
 }
 .herotext {                             /*--Hero Text Adjustments--*/
@@ -86,9 +117,16 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
 }
 .title {
     white-space: nowrap;
-    margin-bottom: -10px;
+    margin-bottom: 10px;
+    padding-top: 100px;
     font-weight: 600;
     font-size: 57px;
+}
+.formtext {
+    color: #333333;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /*-- hr Classes --*/
@@ -102,15 +140,15 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
     width: 15%;
     border-radius: 5px;
     margin-left: 0;
-    margin-top: -15px;
-    margin-bottom: -5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 .chr {
     border: 1.5px solid #DBDBDB;
     width: 40%;
     border-radius: 5px;
     margin-top: -15px;
-    margin-bottom: -5px;
+    margin-bottom: 5px;
 }
 .vhr {
     border: 1.5px solid #FFFFFF;
@@ -122,6 +160,7 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
 .fhr {
     border: 1px solid #707070;
     width: 75%;
+    margin-top: 20px;
     border-radius: 5px;
 }
 
@@ -143,15 +182,6 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
     justify-content: center;
     align-items: center;
 }           
-.hbbutton {                      /*--FooterButton Class--*/
-    background-color: Transparent;
-    color: #BDBDBD;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-}
 .footerbutton {                      /*--FooterButton Class--*/
     background-color: Transparent;
     color: #BDBDBD;
@@ -160,6 +190,8 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
     cursor:pointer;
     overflow: hidden;
     outline:none;
+    margin-top: -18px;
+    font-size: 15px;
 }
 .footerbutton a {                      /*--FooterButton Class--*/
     background-color: Transparent;
@@ -170,6 +202,7 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
     overflow: hidden;
     outline:none;
     margin-top: -18px;
+    
 }
 .ftext {
     color: #F2F2F2;
@@ -180,7 +213,7 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
     color: white;
 }
 .fpad {
-    padding: 30px 0px 0px 70px;
+    padding: 25px 0px 0px 70px;
 }
 .fpadt {
     padding: 0px 25px 0px 70px;
@@ -191,7 +224,8 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
 }
 .fcopy {
     color: #BDBDBD;
-    margin-top: -5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 15px;
 }
 
@@ -199,7 +233,7 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
 .card {
     flex: 1 0 30%; 
     margin: 2%; 
-    padding: 0.5em 0;
+    padding: 2.5em 0;
     background-color: #F5F5F5;
     border-radius: 15px;
 }
@@ -226,10 +260,85 @@ a {                                 /*--Sets Hyperlink text Adjustments--*/
     cursor:pointer;
     overflow: hidden;
     outline:none;
-    width: 115px;
-    height: 115px;
+    width: 82px;
+    height: 82px;
 }
 .social img {
     width: 100%;
     height: auto;
+}
+/*-- Form Classes --*/
+.formwrap {
+	position: relative;
+    width: 25%;
+    margin-left: 75px;
+}
+.formtitle {
+    margin-left: 75px;
+    font-weight: 600;
+}
+.formhr {
+    border: 1.5px solid #DBDBDB;
+    width: 15%;
+    border-radius: 5px;
+    margin-left: 75px;
+    margin-top: -15px;
+    margin-bottom: -5px;
+}
+.formwrap .forminput{
+    width: 100%;
+    margin-bottom: 10px;
+	outline: none;
+	border:none;
+	border-bottom: 1px solid #777;
+ 	box-shadow: none !important;
+}
+.formselect {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+	outline: none;
+	border:none;
+	border-bottom: 1px solid #777;
+ 	box-shadow: none !important;
+}
+.formoption {
+    font-size: 13px;
+}
+.formarea {
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 200px;
+    min-height: 200px;
+    font-size: 14px;
+    font-weight: 400;
+    resize: none;
+}
+textarea::-webkit-input-placeholder {
+    font-weight: 500;
+    color: black;
+    padding-left: 5px;
+}
+.formwrap .forminput:focus{
+	border-color: blue;
+	border-width: medium medium 2px;
+}
+.formwrap .formtext {
+	position: absolute;
+	pointer-events: none;
+	top: 18px;
+	left: 10px;
+    transition: 0.2s ease all;
+    font-size: 15px;
+    font-weight: 500;
+}
+.formwrap input:focus ~ .formtext,
+.formwrap input:not(:focus):valid ~ .formtext{
+	top: 0px;
+	left: 0px;
+	font-size: 13px;
+	opacity: 1;
 }
