@@ -1,5 +1,13 @@
 # Game-Programming-Website
 DITM Prabhjot Sodhi Game Programming
+Under MIT License
 
-If you are using my code you MUST credit it in the comments or on your website.
-Any code used without crediting will lead to legal offences being made.
+## You are Allowed:
+* Commerical Use
+* Distribution
+* Modification
+* Private Use
+
+## On the following Conditions:
+* A copyright Notice MUST be included in your software.
+* Any code used without crediting will lead to legal offences being made.
